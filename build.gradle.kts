@@ -31,10 +31,16 @@ tasks {
     }
 
     val pluginVersion = project.version.toString()
+    val serverPluginsDir = layout.projectDirectory.dir("../../server/plugins")
     register<Copy>("deployToServer") {
         dependsOn(shadowJar)
+        doFirst {
+            serverPluginsDir.asFile.listFiles { _, name ->
+                name.startsWith("AscendentCore-") && name.endsWith(".jar")
+            }?.forEach { it.delete() }
+        }
         from(shadowJar.flatMap { it.archiveFile })
-        into(layout.projectDirectory.dir("../../server/plugins"))
+        into(serverPluginsDir)
         rename { "AscendentCore-$pluginVersion.jar" }
     }
 

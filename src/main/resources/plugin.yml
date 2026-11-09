@@ -1,7 +1,7 @@
 name: AscendentCore
-description: $description
+description: "${description}"
 prefix: AscendentCore
-version: '${version}'
+version: "${version}"
 
 main: com.thelastascension.ascendentCore.AscendentCore
 api-version: '1.21.1'
