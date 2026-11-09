@@ -1,0 +1,44 @@
+# ============================================================================
+# AscendentCore - English Language File (en_us) [SECONDARY]
+# ============================================================================
+
+prefix: "&8[&6&lAscendant&8] &r"
+
+system:
+  enabled: "&aAscendentCore v{version} successfully enabled."
+  disabled: "&cAscendentCore disabled. All player profiles have been saved."
+  reloaded: "&aConfiguration and language files (ES/EN) reloaded."
+  no-permission: "&cYou do not have permission to perform this action."
+  player-only: "&cThis command can only be executed by a player."
+  player-not-found: "&cPlayer &e{player} &cwas not found."
+  lang-changed: "&aYour text language has been set to &eEnglish (en_us)&a."
+  lang-invalid: "&cInvalid language. Available languages: &ees_es&c, &een_us&c."
+  modules-header: "&6&l=== Modules Connected to AscendentCore ({count}) ==="
+  modules-empty: "&7Currently only &eAscendentCore &7is active."
+  modules-entry: "&8- &e{name} &7v{version} &8(&aActive&8)"
+
+profile:
+  loaded: "&7Profile for &e{player} &7synchronized (&6Lv. {level} &8| &e{coins} Coins&7)."
+  stats-header: "&6&l=== Attributes of {player} (Lv. {level}) ==="
+  stats-class: "&7Active Class: &b{class} &8| &7Free Global Points: &a{points}"
+  stats-economy: "&7Coins: &6{coins} &8| &7Talisman Slots: &d{talismans}"
+  stats-combat: "&7Health: &c{health} &8| &7Defense: &9{defense} &8| &7Max Stun: &e{stun}"
+  stats-damage: "&7Physical Dmg: &f{phys} &8| &7Magic Dmg: &b{magic}"
+
+elements:
+  igneo: "&cIgneous"
+  sylva: "&aSylva"
+  terra: "&6Terra"
+  fulmen: "&dFulmen"
+  crio: "&bCryo"
+  cefiro: "&3Zephyr"
+  umbra: "&5Umbra"
+  astral: "&eAstral"
+
+combat:
+  parry-success: "&b&lPERFECT PARRY! &7(+{stun} Enemy Stun)"
+  block-mitigated: "&eBlocked &7(-{mitigated}% dmg | +{stun} your Stun)"
+  stunned: "&c&lSTUNNED! &7You cannot act for {seconds}s."
+  downed-self: "&c&lYOU ARE DOWNED! &7An ally can revive you ({seconds}s)."
+  downed-ally: "&e&l{player} is downed! &7Get close and hold crouch/right-click to revive them."
+  revived-success: "&a&lYou have been revived by {healer}!"

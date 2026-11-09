@@ -1,0 +1,33 @@
+# ============================================================================
+# AscendentCore v1.0.0 - Configuración Central (The Last Ascension)
+# ============================================================================
+
+server-info:
+  name: "The Last Ascension"
+  main-city: "Ascendant"
+  default-language: "es_es"
+  strict-spanish-audit: true
+
+# Configuración de Base de Datos (Portable Windows -> Linux)
+# Por defecto utiliza SQLite en modo WAL (máxima velocidad en disco local + caché en RAM).
+# Si en producción en Linux deseas usar MariaDB/MySQL, cambia 'type' a 'MYSQL'.
+database:
+  type: "SQLITE"
+  sqlite-file: "data/ascendent.db"
+  mysql:
+    host: "127.0.0.1"
+    port: 3306
+    database: "the_last_ascension"
+    username: "ascendent"
+    password: ""
+    pool-size: 10
+
+# Valores iniciales de los jugadores al entrar por primera vez
+player-defaults:
+  starting-coins: 100
+  starting-talisman-slots: 1
+  base-health: 100.0
+  base-defense: 10.0
+  base-physical-damage: 10.0
+  base-magic-damage: 10.0
+  base-max-stun: 100.0

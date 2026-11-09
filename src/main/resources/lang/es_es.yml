@@ -1,0 +1,44 @@
+# ============================================================================
+# AscendentCore - Archivo de Idioma Español (es_es) [OBLIGATORIO / PRINCIPAL]
+# ============================================================================
+
+prefix: "&8[&6&lAscendant&8] &r"
+
+system:
+  enabled: "&aNúcleo AscendentCore v{version} activado correctamente."
+  disabled: "&cNúcleo AscendentCore desactivado. Todos los perfiles han sido guardados."
+  reloaded: "&aConfiguración y archivos de idioma (ES/EN) recargados correctamente."
+  no-permission: "&cNo tienes permiso para ejecutar esta acción."
+  player-only: "&cEste comando solo puede ser ejecutado por un jugador."
+  player-not-found: "&cNo se ha encontrado al jugador &e{player}&c."
+  lang-changed: "&aTu idioma de texto se ha cambiado a &eEspañol (es_es)&a."
+  lang-invalid: "&cIdioma no válido. Idiomas disponibles: &ees_es&c, &een_us&c."
+  modules-header: "&6&l=== Módulos Conectados a AscendentCore ({count}) ==="
+  modules-empty: "&7Actualmente solo está activo el núcleo &eAscendentCore&7."
+  modules-entry: "&8- &e{name} &7v{version} &8(&aActivo&8)"
+
+profile:
+  loaded: "&7Perfil de &e{player} &7sincronizado (&6Nv. {level} &8| &e{coins} Monedas&7)."
+  stats-header: "&6&l=== Atributos de {player} (Nv. {level}) ==="
+  stats-class: "&7Clase Activa: &b{class} &8| &7Puntos Globales Libres: &a{points}"
+  stats-economy: "&7Monedas: &6{coins} &8| &7Huecos de Talismán: &d{talismans}"
+  stats-combat: "&7Vida: &c{health} &8| &7Defensa: &9{defense} &8| &7Postura/Stun Máx: &e{stun}"
+  stats-damage: "&7Daño Físico: &f{phys} &8| &7Daño Mágico: &b{magic}"
+
+elements:
+  igneo: "&cÍgneo"
+  sylva: "&aSylva"
+  terra: "&6Terra"
+  fulmen: "&dFulmen"
+  crio: "&bCrio"
+  cefiro: "&3Céfiro"
+  umbra: "&5Umbra"
+  astral: "&eAstral"
+
+combat:
+  parry-success: "&b&l¡PARRY PERFECTO! &7(+{stun} Stun al enemigo)"
+  block-mitigated: "&eBloqueo &7(-{mitigated}% daño | +{stun} tu Stun)"
+  stunned: "&c&l¡ATURDIDO! &7No puedes actuar durante {seconds}s."
+  downed-self: "&c&l¡HAS CAÍDO ABATIDO! &7Un compañero puede acercarse para revivirte ({seconds}s)."
+  downed-ally: "&e&l¡{player} ha caído abatido! &7Acércate y mantén clic derecho/agachado para revivirlo."
+  revived-success: "&a&l¡Has sido revivido por {healer}!"

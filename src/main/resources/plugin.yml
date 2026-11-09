@@ -1,0 +1,17 @@
+name: AscendentCore
+description: $description
+prefix: AscendentCore
+version: '${version}'
+
+main: com.thelastascension.ascendentCore.AscendentCore
+api-version: '1.21.1'
+load: STARTUP
+
+authors: [ Sebilebi ]
+website: https://github.com/The-Last-Ascension
+
+commands:
+  ascendent:
+    description: Comando principal del núcleo de The Last Ascension (Ascendant).
+    aliases: [ asc, ascendant ]
+    usage: /ascendent <info|stats|modulos|idioma|reload>
